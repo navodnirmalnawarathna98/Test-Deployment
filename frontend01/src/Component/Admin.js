@@ -9,7 +9,7 @@ const Admin = () => {
     useEffect(() => {
         const fetchAdminData = async () => {
             try {
-                const response = await axios.get('http://localhost:8070/admin/'); // Replace with your actual backend API endpoint to fetch admin data
+                const response = await axios.get('http://localhost:10000/admin/'); // Replace with your actual backend API endpoint to fetch admin data
                 setAdminData(response.data);
             } catch (error) {
                 console.error('Error fetching admin data:', error);
