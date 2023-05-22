@@ -9,7 +9,7 @@ const Admin = () => {
     useEffect(() => {
         const fetchAdminData = async () => {
             try {
-                const response = await axios.get('http://localhost:8070/admin/'); // Replace with your actual backend API endpoint to fetch admin data
+                const response = await axios.get('http://localhost:10000/admin/'); // Replace with your actual backend API endpoint to fetch admin data
                 setAdminData(response.data);
             } catch (error) {
                 console.error('Error fetching admin data:', error);
@@ -27,6 +27,7 @@ const Admin = () => {
       <th>f Name</th>
       <th>l Name</th>
       <th>Email</th>
+      <th>Address</th>
       {/* Add more table headers as needed */}
     </tr>
   </thead>
@@ -36,6 +37,7 @@ const Admin = () => {
         <td>{adminItem.firstName}</td>
         <td>{adminItem.lastName}</td>
         <td>{adminItem.email}</td>
+        <td>{adminItem.address}</td>
         {/* Add more table cells as needed */}
       </tr>
     ))}

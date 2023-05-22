@@ -27,6 +27,7 @@ const Admin = () => {
       <th>f Name</th>
       <th>l Name</th>
       <th>Email</th>
+      <th>Address</th>
       {/* Add more table headers as needed */}
     </tr>
   </thead>
@@ -36,6 +37,7 @@ const Admin = () => {
         <td>{adminItem.firstName}</td>
         <td>{adminItem.lastName}</td>
         <td>{adminItem.email}</td>
+        <td>{adminItem.address}</td>
         {/* Add more table cells as needed */}
       </tr>
     ))}
