@@ -5,7 +5,7 @@ function App() {
   return (
    <div>
     <Admin/>
-    <a href='https://coruscating-frangollo-c02014.netlify.app' target='_blank'>part 2</a>
+    <a href='https://coruscating-frangollo-c02014.netlify.app'>part 2</a>
    </div>
   );
 }
